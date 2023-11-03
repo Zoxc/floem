@@ -562,6 +562,7 @@ impl WindowHandle {
             post_layout,
             end,
             taffy_duration,
+            taffy_nodes: self.app_state.taffy.total_node_count(),
             window,
             window_size: self.size.get_untracked() / self.app_state.scale,
             scale: self.scale * self.app_state.scale,
